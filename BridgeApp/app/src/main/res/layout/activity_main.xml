@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv_declare_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="instructions:"
+        android:textSize="15sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_declare"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="The application is invalid when opened manually and must be awakened by the installer to transmit the application to be installed to the detection end, obtain the test results and make the installation decision"
+        android:layout_marginTop="30dp"
+        android:textSize="17sp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tv_declare_tag" />
+
+    <TextView
+        android:id="@+id/tv_pathtag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The APP directory"
+        android:textSize="15sp"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_filepath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="There is no application to be installed"
+        android:textSize="17sp"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tv_pathtag" />
+
+    <TextView
+        android:id="@+id/tv_progress_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Application Upload Progress"
+        android:textSize="15sp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="10dp" />
+
+    <ProgressBar
+        android:id="@+id/pb_process"
+        android:layout_width="300dp"
+        android:progress="0"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:id="@+id/tv_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="100%"
+        android:text="——"
+        android:textSize="10sp"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/pb_process"/>
+
+    <TextView
+        android:id="@+id/tv_status_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status:"
+        android:textSize="15sp"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No applications to be installed"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/tv_status_tag"
+        android:layout_marginTop="355dp" />
+
+
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:text="YES"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

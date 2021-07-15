@@ -1,0 +1,3 @@
+!!!!NOTE!!!!
+
+In order to avoid possible illegal infringement, There is no way to directly provide code to modify AndroBugs. The core idea is to extract only CRITICAL and WARNING vulnerabilities from the app，bridge process will be shown in test_vector.py
